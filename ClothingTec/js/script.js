@@ -3,7 +3,7 @@ let buscar = document.querySelector(".buscar_form");
 document.querySelector("#buscar").onclick = () => {
   buscar.classList.toggle("active");
   carritoCompras.classList.remove("active");
-  login.classList.remove("active");
+  login.classList.remov ("active");
   navbar.classList.remove("active");
 };
 
@@ -36,7 +36,7 @@ document.querySelector("#btn_menu").onclick = () => {
 
 /* Carrusel */
 
-var swiper = new Swiper(".carrusel", {
+var swiper = new Sswiper(".carrusel", {
   loop:true,
   spaceBetween: 20,
   autoplay: {

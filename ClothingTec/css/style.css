@@ -403,10 +403,19 @@ section {
   padding: 1rem 0;
 }
 
+/* Categorias */
+
+.categorias .heading .span_cat{
+  clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
+  background: var(--naranja);
+  display: inline-block;
+  padding: 0.5rem 3rem;
+  color: var(--blanco);
+}
 /* Productos */
 
 .productos .heading .span_prod{
-  background: var(--naranja);
+  background: var(--violeta);
   color: var(--blanco);
   display: inline-block;
   padding: 0.5rem 3rem;
@@ -491,6 +500,7 @@ section {
   font-size: 1.5rem;
   color:var(--gris);
   padding:1rem 0;
+  max-width: 21rem;
 }
 
 .footer .box_contenedor .box .links i{
@@ -550,11 +560,12 @@ section {
   padding:1rem;
   padding-top: 2.5rem;
   font-size: 2rem;
-  border-top: 0.5rem solid rgba(0,0,0,.1);
+  border-top: 0.5rem solid rgba(165, 165, 165, 0.301);
+
 }
 
 .footer .creditos span{
-  color:var(--naranja);
+  color:var(--violeta);
 }
 
 .footer .creditos a{
