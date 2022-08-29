@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pagina de prueba</title>
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/prueba.css" />
+    <script
+      src="https://kit.fontawesome.com/41bcea2ae3.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <section class="productos">
+      <div class="swiper mySwiper contenedor_productos">
+        <div class="swiper-wrapper contenido_productos">
+
+          <div class="swiper-slide box">
+              <img
+                src="https://ae01.alicdn.com/kf/H8868712c917e4051875ee740eaeb3ccfs/Shrek-Zapatillas-deportivas-con-estampado-3D-para-hombre-y-mujer-zapatos-informales-de-Tela-con-estampado.jpg_640x640.jpg"
+                alt=""
+              />
+    
+            <h3>Mi pantano</h3>
+            <div class="precio">Precio: $3.000</div>
+            <div class="precio">Talle:</div>
+            <div class="estrellas">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star-half-stroke"></i>
+            </div>
+            <a href="" class="btn">Añadir al Carrito</a>
+          </div>
+
+          <div class="swiper-slide box">
+            <img src="https://http2.mlstatic.com/D_NQ_NP_868635-MLA50513899913_062022-O.webp" alt="">
+            <h3>Cuchau</h3>
+            <div class="precio">Precio: $2.800</div>
+            <div class="talle">Talle:</div>
+            <div class="estrellas">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star-half-stroke"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <a href="" class="btn">Añadir al Carrito</a>
+          </div>
+
+          <div class="swiper-slide box">
+            <img src="https://ae01.alicdn.com/kf/Hbdf7fafb6ce14d8f928b3fa00468d1c0H/Tasmanian-zapatillas-de-deporte-con-estampado-3D-para-hombre-y-mujer-zapatos-de-tela-informales-Taz.jpg" alt="">
+            <h3>Taz</h3>
+            <div class="precio">Precio: $2.500</div>
+            <div class="talle">Talle:</div>
+            <div class="estrellas">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star-half-stroke"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <a href="" class="btn">Añadir al Carrito</a>
+          </div>
+
+          <div class="swiper-slide box">
+            <img src="https://essential.vteximg.com.br/arquivos/ids/320597-1000-1000/265-0040_1.jpg" alt="">
+            <h3>Relampatillas</h3>
+            <div class="precio">Precio: $3.500</div>
+            <div class="talle">Talle:</div>
+            <div class="estrellas">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star-half-stroke"></i>
+            </div>
+            <a href="" class="btn">Añadir al Carrito</a>
+          </div>
+
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </section>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        slidesPerGroup: 3,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+  </body>
+</html>

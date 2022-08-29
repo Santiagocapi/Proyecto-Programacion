@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  transition: all 0.2s linear;
+  text-transform: capitalize;
+}
+
+:root {
+  --naranja: #ff7800;
+  --negro: #000000;
+  --blanco: #ffffff;
+  --violeta: #92009f;
+  --gris: #888888;
+  --claro: #d1d1d133;
+  --box-shadow: 0 2rem 1.5rem rgba(0, 0, 0, 0.1);
+  --borde: 0.2rem solid rgba(0, 0, 0, 0.1);
+  --contorno: 0.1rem solid rgba(0, 0, 0, 0.1);
+  --contorno-hover: 0.1rem solid var(--negro);
+}
+
+body {
+  height: 40rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #eee;
+}
+
+.swiper{
+    width: 70rem;
+}
+
+section {
+  padding: 2rem 9%;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.8rem 3rem;
+  font-size: 1rem;
+  border: 0.1rem solid var(--negro);
+  border-radius: 0.5rem;
+  color: var(--negro);
+  cursor: pointer;
+  background: none;
+}
+
+.btn:hover {
+  background: var(--naranja);
+  color: var(--blanco);
+}
+
+.productos .contenedor_productos .box {
+  background: var(--blanco);
+  text-align: center;
+  padding: 1.5rem 3rem;
+  outline-offset: -1rem;
+  outline: var(--contorno);
+  transition: 0.2s linear;
+}
+
+.productos .contenedor_productos .box img {
+  height: 15rem;
+  z-index: 100;
+}
+
+.productos .box:hover {
+  outline: var(--contorno-hover);
+  outline-offset: 0rem;
+}
+
+.productos .box h3 {
+  font-size: 1.5rem;
+  color: var(--negro);
+}
+
+.productos .box .precio {
+  font-size: 0.8em;
+  color: var(--gris);
+  padding: 0.5rem 0;
+}
+
+.productos .box .estrellas i {
+  font-size: 1rem;
+  color: var(--violeta);
+  padding: 0.5rem 0;
+}
+
+.swiper-pagination-bullet{
+    height: 0.5rem;
+    width: 1.5rem;
+    border-radius: 1.5rem;
+    background: var(--violeta);
+}
+
+.swiper-button-next, .swiper-button-prev{
+    opacity: 0.6;
+    color: var(--violeta);
+    transition: all 0.3s ease;
+    margin: 0 2rem 0 2rem;
+}
+
+.swiper-button-next:hover, .swiper-button-prev:hover{
+    opacity: 1;
+    color: var(--violeta);
+}
+

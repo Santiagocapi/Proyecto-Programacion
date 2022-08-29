@@ -432,7 +432,6 @@ section {
 
 .productos .carrusel .box{
   background: var(--blanco);
-  border-radius: 0.5rem;
   text-align: center;
   padding: 3rem 2rem;
   outline-offset: -1rem;
