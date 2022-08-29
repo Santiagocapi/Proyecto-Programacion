@@ -36,7 +36,7 @@ document.querySelector("#btn_menu").onclick = () => {
 
 /* Carrusel */
 
-var swiper = new Sswiper(".carrusel", {
+var swiper = new Swiper(".carrusel", {
   loop:true,
   spaceBetween: 20,
   autoplay: {
