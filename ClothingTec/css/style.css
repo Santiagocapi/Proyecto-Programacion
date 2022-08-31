@@ -412,59 +412,6 @@ section {
   padding: 0.5rem 3rem;
   color: var(--blanco);
 }
-/* Productos */
-
-.productos .heading .span_prod{
-  background: var(--violeta);
-  color: var(--blanco);
-  display: inline-block;
-  padding: 0.5rem 3rem;
-  clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
-}
-
-.productos .carrusel{
-  padding: 1rem;
-}
-
-.productos .carrusel:first-child{
-  margin-bottom: 2rem;
-}
-
-.productos .carrusel .box{
-  background: var(--blanco);
-  text-align: center;
-  padding: 3rem 2rem;
-  outline-offset: -1rem;
-  outline: var(--contorno);
-  box-shadow: var(--box-shadow);
-  transition:0.2s linear;
-}
-
-.productos .carrusel .box:hover {
-  outline: var(--contorno-hover);
-  outline-offset: 0rem;
-}
-
-.productos .carrusel .box img{
-  height: 20rem;
-}
-
-.productos .carrusel .box h3{
-  font-size: 2.5rem;
-  color: var(--negro);
-}
-
-.productos .carrusel .box .price{
-  font-size: 2rem;
-  color: var(--gris);
-  padding: 0.5rem 0;
-}
-
-.productos .carrusel .box .estrellas i{
-  font-size: 1.7rem;
-  color: var(--violeta);
-  padding: 0.5rem 0;
-}
 
 /* Footer */
 
