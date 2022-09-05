@@ -33,25 +33,3 @@ document.querySelector("#btn_menu").onclick = () => {
   carritoCompras.classList.remove("active");
   login.classList.remove("active");
 };
-
-/* Carrusel */
-
-var swiper = new Swiper(".carrusel", {
-  loop:true,
-  spaceBetween: 20,
-  autoplay: {
-    delay:7500,
-    disableOnInteraction:false,
-  },
-  breakpoints: {
-    0: {
-      slidesPerView: 1,
-    },
-    768: {
-      slidesPerView: 2,
-    },
-    1020: {
-      slidesPerView: 3,
-    },
-  },
-});

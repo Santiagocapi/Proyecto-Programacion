@@ -252,19 +252,18 @@ section {
 .header .form_login {
   position: absolute;
   top: 110%;
-  right: 2rem;
+  right: -110%;
   box-shadow: var(--box-shadow);
   width: 30rem;
   padding: 2rem;
   border-radius: 0.3rem;
   background: var(--blanco);
   text-align: center;
-  display: none;
 }
 
 .header .form_login.active {
-  display: block;
-
+  right: 2rem;
+  transition: 0.3s linear;
 }
 
 .header .form_login h3 {
@@ -400,7 +399,7 @@ section {
 
 /* Categorias */
 
-.categorias .heading .span_cat{
+.categorias .heading .span_cat {
   clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
   background: var(--celeste);
   display: inline-block;
@@ -410,111 +409,109 @@ section {
 
 /* Footer */
 
-.footer{
+.footer {
   background: var(--blanco);
 }
 
-.footer .box_contenedor{
+.footer .box_contenedor {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   margin: 0rem 2rem 0rem 2rem;
 }
 
-.footer .box_contenedor .box h3{
+.footer .box_contenedor .box h3 {
   font-size: 2rem;
-  color:var(--negro);
-  padding:1rem 0;
+  color: var(--negro);
+  padding: 1rem 0;
 }
 
-.footer .box_contenedor .box h3 .titulo_color{
-  color:var(--celeste);
+.footer .box_contenedor .box h3 .titulo_color {
+  color: var(--celeste);
   font-size: 2.5rem;
 }
 
-.footer .box_contenedor .box h3 i{
-  color:var(--rosado);
+.footer .box_contenedor .box h3 i {
+  color: var(--rosado);
   margin-right: 0.3rem;
 }
 
-.footer .box_contenedor .box .links{
+.footer .box_contenedor .box .links {
   display: block;
   font-size: 1.5rem;
-  color:var(--gris);
-  padding:1rem 0;
+  color: var(--gris);
+  padding: 1rem 0;
   max-width: 21rem;
 }
 
-.footer .box_contenedor .box .links i{
-  color:var(--celeste);
+.footer .box_contenedor .box .links i {
+  color: var(--celeste);
   padding-right: 0.5rem;
 }
 
-.footer .box_contenedor .box .links_nav i{
-  color:var(--rosado);
+.footer .box_contenedor .box .links_nav i {
+  color: var(--rosado);
   padding-right: 0.5rem;
 }
 
-.footer .box_contenedor .box .links:hover i{
+.footer .box_contenedor .box .links:hover i {
   padding-right: 2rem;
 }
 
-
-.footer .box_contenedor .box p{
+.footer .box_contenedor .box p {
   line-height: 1.8;
   font-size: 1.5rem;
-  color:var(--gris);
-  padding:1rem 0;
+  color: var(--gris);
+  padding: 1rem 0;
 }
 
-.footer .box_contenedor .box .redes_sociales a{
-  height:4rem;
-  width:4rem;
-  line-height:4rem;
+.footer .box_contenedor .box .redes_sociales a {
+  height: 4rem;
+  width: 4rem;
+  line-height: 4rem;
   border-radius: 0.5rem;
   font-size: 2rem;
-  color:var(--negro);
+  color: var(--negro);
   margin-right: 0.2rem;
   background: var(--blanco);
   text-align: center;
 }
 
-.footer .box_contenedor .box .redes_sociales a:hover{
+.footer .box_contenedor .box .redes_sociales a:hover {
   background: var(--celeste);
   color: var(--blanco);
 }
 
-.footer .box_contenedor .box .gmail{
+.footer .box_contenedor .box .gmail {
   width: 100%;
-  margin:.7rem 0;
-  padding:1rem;
-  border-radius: .5rem;
+  margin: 0.7rem 0;
+  padding: 1rem;
+  border-radius: 0.5rem;
   background: #eee;
   font-size: 1.6rem;
-  color:var(--black);
+  color: var(--black);
   text-transform: none;
 }
 
-.footer .box_contenedor .box .footer_img{
+.footer .box_contenedor .box .footer_img {
   margin-top: 1rem;
   height: 2rem;
   display: block;
 }
 
-.footer .creditos{
+.footer .creditos {
   text-align: center;
   margin-top: 2rem;
-  padding:1rem;
+  padding: 1rem;
   padding-top: 2.5rem;
   font-size: 2rem;
   border-top: 0.5rem solid rgba(165, 165, 165, 0.301);
-
 }
 
-.footer .creditos span{
-  color:var(--rosado);
+.footer .creditos span {
+  color: var(--rosado);
 }
 
-.footer .creditos a{
+.footer .creditos a {
   color: var(--negro);
 }
 
@@ -570,12 +567,12 @@ section {
   .heading {
     font-size: 2.5rem;
   }
-  
-  .footer{
+
+  .footer {
     text-align: center;
   }
 
-  .footer .box_contenedor .box .footer_img{
+  .footer .box_contenedor .box .footer_img {
     margin: 2rem auto;
   }
 }
