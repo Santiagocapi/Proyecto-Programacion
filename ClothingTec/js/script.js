@@ -3,7 +3,7 @@ let buscar = document.querySelector(".buscar_form");
 document.querySelector("#buscar").onclick = () => {
   buscar.classList.toggle("active");
   carritoCompras.classList.remove("active");
-  login.classList.remov ("active");
+  login.classList.remove ("active");
   navbar.classList.remove("active");
 };
 

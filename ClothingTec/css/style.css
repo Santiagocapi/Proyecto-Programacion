@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600&display=swap");
 
 :root {
-  --naranja: #ff7800;
+  --celeste: #6fd6ff;
   --negro: #000000;
   --blanco: #ffffff;
-  --violeta: #92009f;
+  --rosado: #fc9dd1;
   --gris: #888888;
   --claro: #d1d1d133;
   --box-shadow: 0 2rem 1.5rem rgba(0, 0, 0, 0.1);
@@ -61,7 +61,7 @@ section {
 }
 
 .btn:hover {
-  background: var(--naranja);
+  background: var(--celeste);
   color: var(--blanco);
 }
 
@@ -86,12 +86,12 @@ section {
 }
 
 .header .titulo_color {
-  color: var(--violeta);
+  color: var(--rosado);
   font-size: 2.6rem;
 }
 
 .header .titulo i {
-  color: var(--naranja);
+  color: var(--celeste);
   font-size: 2.6rem;
   margin-right: 0.3rem;
 }
@@ -103,7 +103,7 @@ section {
 }
 
 .header .navbar a:hover {
-  color: var(--naranja);
+  color: var(--celeste);
 }
 
 /* Iconos de la barra de navegacion */
@@ -118,7 +118,7 @@ section {
   line-height: 4.5rem;
   border-radius: 0.5rem;
   background-color: var(--claro);
-  color: var(--violeta);
+  color: var(--celeste);
   margin-left: 1rem;
   font-size: 1.8rem;
   text-align: center;
@@ -126,13 +126,8 @@ section {
 }
 
 .header .iconos div:hover {
-  background-color: var(--naranja);
+  background-color: var(--rosado);
   color: var(--negro);
-}
-
-.header .iconos .carrito:hover {
-  background-color: var(--violeta);
-  color: var(--naranja);
 }
 
 #btn_menu {
@@ -178,7 +173,7 @@ section {
 }
 
 .header .buscar_form label:hover {
-  color: var(--naranja);
+  color: var(--celeste);
 }
 
 /* Carrito de compras */
@@ -222,7 +217,7 @@ section {
 }
 
 .header .carrito_compras .box_carrito .basurin:hover {
-  color: var(--violeta);
+  color: var(--rosado);
 }
 
 .header .carrito_compras .box_carrito .contenedor h3 {
@@ -295,7 +290,7 @@ section {
 }
 
 .header .form_login p a {
-  color: var(--naranja);
+  color: var(--celeste);
   text-decoration: underline;
 }
 
@@ -324,11 +319,11 @@ section {
 }
 
 .presentacion .contenedor span {
-  color: var(--violeta);
+  color: var(--rosado);
 }
 
 .presentacion .contenedor .titulo_color {
-  color: var(--naranja);
+  color: var(--celeste);
   font-size: 3rem;
 }
 
@@ -342,7 +337,7 @@ section {
 /* Servicios */
 
 .heading .span_serv {
-  background: var(--violeta);
+  background: var(--rosado);
   color: var(--blanco);
   display: inline-block;
   padding: 0.5rem 3rem;
@@ -407,7 +402,7 @@ section {
 
 .categorias .heading .span_cat{
   clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
-  background: var(--naranja);
+  background: var(--celeste);
   display: inline-block;
   padding: 0.5rem 3rem;
   color: var(--blanco);
@@ -432,12 +427,12 @@ section {
 }
 
 .footer .box_contenedor .box h3 .titulo_color{
-  color:var(--naranja);
+  color:var(--celeste);
   font-size: 2.5rem;
 }
 
 .footer .box_contenedor .box h3 i{
-  color:var(--violeta);
+  color:var(--rosado);
   margin-right: 0.3rem;
 }
 
@@ -450,7 +445,12 @@ section {
 }
 
 .footer .box_contenedor .box .links i{
-  color:var(--naranja);
+  color:var(--celeste);
+  padding-right: 0.5rem;
+}
+
+.footer .box_contenedor .box .links_nav i{
+  color:var(--rosado);
   padding-right: 0.5rem;
 }
 
@@ -479,7 +479,7 @@ section {
 }
 
 .footer .box_contenedor .box .redes_sociales a:hover{
-  background: var(--naranja);
+  background: var(--celeste);
   color: var(--blanco);
 }
 
@@ -511,7 +511,7 @@ section {
 }
 
 .footer .creditos span{
-  color:var(--violeta);
+  color:var(--rosado);
 }
 
 .footer .creditos a{
