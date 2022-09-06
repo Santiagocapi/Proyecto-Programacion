@@ -36,8 +36,9 @@ body {
 .box {
   position: relative;
   width: 60%;
+  max-width: 60%;
   height: 100%;
-  background: #fff;
+  background: url(https://img.freepik.com/foto-gratis/fondo-textura-marmol-gris-sucio_53876-108405.jpg?w=2000);
 }
 
 .form .diseño {
@@ -48,7 +49,7 @@ body {
   border-bottom-left-radius: 0.8rem;
 }
 
-.form .diseño:after {
+.form .diseño::after {
   content: "";
   position: absolute;
   width: 2.8rem;
@@ -78,3 +79,41 @@ body {
   left: 0%;
   top: 2.5%;
 }
+
+.form .box .diseño_box::after {
+  content: "";
+  position: absolute;
+  width: 2.8rem;
+  height: 0.8rem;
+  background: #ffffff;
+  border-radius: 0rem 0.8rem 0.8rem 0rem;
+  right: -7.8%;
+  top: 97.8%;
+}
+
+.form .box .diseño_box::before {
+  content: "";
+  position: absolute;
+  width: 2.2rem;
+  height: 0.8rem;
+  background: #ffffff;
+  border-radius: 0rem 0.8rem 0.8rem 0rem;
+  right: -6.1%;
+  top: 92.5%;
+}
+
+.form .box .titulo h1{
+  font-size: 2rem;
+  display: flex;
+  margin-left: 11rem;
+}
+
+.form .box .titulo span{
+  color: var(--celeste);
+}
+
+.form .box .titulo i{
+  color: var(--rosado);
+  margin: 0.5rem 0.2rem 0 0;
+}
+
