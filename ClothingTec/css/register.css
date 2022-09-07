@@ -105,15 +105,15 @@ body {
 .form .box .titulo h1{
   font-size: 2rem;
   display: flex;
-  margin-left: 11rem;
+  justify-content: center;
+  margin-top: 2rem;
 }
 
 .form .box .titulo span{
   color: var(--celeste);
 }
 
-.form .box .titulo i{
+.form .box .titulo .logo{
   color: var(--rosado);
   margin: 0.5rem 0.2rem 0 0;
 }
-
