@@ -41,6 +41,8 @@ body {
   background: url(https://img.freepik.com/foto-gratis/fondo-textura-marmol-gris-sucio_53876-108405.jpg?w=2000);
 }
 
+/* Diseño */
+
 .form .diseño {
   position: relative;
   width: 40%;
@@ -67,7 +69,7 @@ body {
   background: #be6b70;
   border-radius: 0.8rem 0rem 0rem 0.8rem;
   left: -7.6%;
-  top: 5%;
+  top: 4.5%;
 }
 
 .form .diseño .dentro {
@@ -77,8 +79,22 @@ body {
   background: var(--negro);
   border-radius: 0rem 0.8rem 0.8rem 0rem;
   left: 0%;
-  top: 2.5%;
+  top: 2.3%;
 }
+
+.form .diseño .dentro::before{
+  content: '';
+  position: absolute;
+  width: 1.4rem;
+  height: 0.8rem;
+  background: var(--negro);
+  border-radius: 0rem 0.8rem 0.8rem 0rem;
+  left: 0%;
+  top: 190%;
+}
+
+
+/* Box */
 
 .form .box .diseño_box::after {
   content: "";
@@ -99,7 +115,28 @@ body {
   background: #ffffff;
   border-radius: 0rem 0.8rem 0.8rem 0rem;
   right: -6.1%;
-  top: 92.5%;
+  top: 93.2%;
+}
+
+.form .box .diseño_box .diseño_dentro_box{
+  position: absolute;
+  width: 2rem;
+  height: 0.8rem;
+  background: var(--negro);
+  border-radius: 0.8rem 0rem 0rem 0.8rem;
+  right: 0%;
+  top: 95.5%;
+}
+
+.form .box .diseño_box .diseño_dentro_box::before{
+  content: '';
+  position: absolute;
+  width: 1.4rem;
+  height: 0.8rem;
+  background: var(--negro);
+  border-radius: 0.8rem 0rem 0rem 0.8rem;
+  right: 0%;
+  top: -203%;
 }
 
 .form .box .titulo h1{
@@ -117,3 +154,6 @@ body {
   color: var(--rosado);
   margin: 0.5rem 0.2rem 0 0;
 }
+
+/* Formulario */
+
