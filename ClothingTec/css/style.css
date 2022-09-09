@@ -134,48 +134,6 @@ section {
   display: none;
 }
 
-/* Barrita de busqueda */
-
-.header .buscar_form {
-  position: absolute;
-  top: 110%;
-  right: -110%;
-  width: 50rem;
-  height: 4rem;
-  background: var(--blanco);
-  border-radius: 0.5rem;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  box-shadow: var(--box-shadow);
-}
-
-.header .buscar_form.active {
-  right: 2rem;
-  transition: 0.3s linear;
-}
-
-.header .buscar_form input {
-  height: 100%;
-  width: 100%;
-  background: none;
-  text-transform: none;
-  font-size: 1.6rem;
-  color: var(--negro);
-  padding: 0 1.5rem;
-}
-
-.header .buscar_form label {
-  font-size: 2.2rem;
-  padding-right: 1.5rem;
-  color: var(--negro);
-  cursor: pointer;
-}
-
-.header .buscar_form label:hover {
-  color: var(--celeste);
-}
-
 /* Carrito de compras */
 
 .header .carrito_compras {
@@ -405,6 +363,30 @@ section {
   display: inline-block;
   padding: 0.5rem 3rem;
   color: var(--blanco);
+}
+
+.categorias .contenedor_categorias .box {
+  padding: 10rem;
+  background: #fff;
+  box-shadow: var(--box-shadow);
+  outline: var(--contorno);
+  outline-offset: -1rem;
+  text-align: center;
+}
+
+.categorias .contenedor_categorias .box:hover{
+  outline:var(--contorno-hover);
+  outline-offset: 0rem;
+}
+
+.categorias .contenedor_categorias .box h3 {
+  font-size: 2rem;
+  color: var(--negro);
+  line-height: 1.8;
+}
+
+.categorias .contenedor_categorias .box p{
+  font-size: 1.2rem;
 }
 
 /* Footer */
