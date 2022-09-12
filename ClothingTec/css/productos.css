@@ -238,3 +238,32 @@ a {
   color: var(--celeste);
   text-decoration: underline;
 }
+
+.contendor{
+  width: 90%;
+  max-width: 50rem;
+  margin: auto;
+} 
+
+/* Main */
+
+main{
+  padding: 2.5rem 0;
+}
+
+main .titulo{
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+main .barra_busqueda{
+  width: 70%;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  background: #fff;
+  padding: 0 1.2rem;
+  border-radius: 6.2rem;
+  border: none;
+  text-align: center;
+  font-size: 1.2rem;
+}
