@@ -65,6 +65,8 @@ section {
   color: var(--blanco);
 }
 
+/* Header */
+
 .header {
   position: fixed;
   top: 0;
