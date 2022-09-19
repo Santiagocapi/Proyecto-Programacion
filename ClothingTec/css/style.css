@@ -357,9 +357,9 @@ section {
   padding: 1rem 0;
 }
 
-/* Categorias */
+/* Productos */
 
-.categorias .heading .span_cat {
+.productos .heading .span_cat {
   clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
   background: var(--celeste);
   display: inline-block;
@@ -367,7 +367,7 @@ section {
   color: var(--blanco);
 }
 
-.categorias .contenedor_categorias .box {
+.productos .contenedor_productos .box {
   padding: 10rem;
   background: #fff;
   box-shadow: var(--box-shadow);
@@ -376,18 +376,18 @@ section {
   text-align: center;
 }
 
-.categorias .contenedor_categorias .box:hover{
+.categorias .contenedor_productos .box:hover{
   outline:var(--contorno-hover);
   outline-offset: 0rem;
 }
 
-.categorias .contenedor_categorias .box h3 {
+.productos .contenedor_productos .box h3 {
   font-size: 2rem;
   color: var(--negro);
   line-height: 1.8;
 }
 
-.categorias .contenedor_categorias .box p{
+.productos .contenedor_productos .box p{
   font-size: 1.2rem;
 }
 
