@@ -264,7 +264,6 @@ section {
   background-size: cover;
   padding-top: 17rem;
   padding-bottom: 10rem;
-  z-index: 100;
 }
 
 .presentacion .contenedor {
@@ -516,10 +515,6 @@ section {
 @media (max-width: 768px) {
   #btn_menu {
     display: inline-block;
-  }
-
-  .header .buscar_form {
-    width: 90%;
   }
 
   .header .navbar {
