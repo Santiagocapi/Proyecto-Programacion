@@ -98,7 +98,17 @@ a {
   margin-right: 0.3rem;
 }
 
-/* Header Iconos */
+.header .navbar a {
+  font-size: 1.8rem;
+  margin: 0 1rem;
+  color: var(--negro);
+}
+
+.header .navbar a:hover {
+  color: var(--celeste);
+}
+
+/* Iconos Barra de Navegacion */
 
 .header .iconos {
   display: flex;
@@ -120,6 +130,10 @@ a {
 .header .iconos div:hover {
   background-color: var(--rosado);
   color: var(--negro);
+}
+
+#btn_menu {
+  display: none;
 }
 
 /* Carrito de compras */
@@ -273,6 +287,28 @@ main .barra_busqueda {
   font-size: 1.2rem;
 }
 
+main .categorias{
+  display: flex;
+}
+
+main .categorias a{
+  color: var(--rosado);
+  flex-wrap: wrap;
+  padding: 2rem 0.4rem;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+main .categorias a.activo{
+  color: var(--celeste);
+  font-size: 1.4rem;
+}
+
+main .categorias a:hover{
+  color: var(--negro);
+  font-size: 1.4rem;
+}
+
 /* Footer */
 
 .footer {
@@ -283,7 +319,7 @@ main .barra_busqueda {
   text-align: center;
   margin-top: 2rem;
   padding: 1rem;
-  padding-top: 2.5rem;
+  padding-top: 1rem;
   font-size: 2rem;
   border-top: 0.5rem solid rgba(165, 165, 165, 0.301);
 }
@@ -329,6 +365,10 @@ main .barra_busqueda {
     font-size: 2rem;
     margin: 2rem 2.5rem;
     display: block;
+  }
+
+  #btn_menu {
+    display: inline-block;
   }
 }
 

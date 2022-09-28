@@ -36,6 +36,8 @@ body {
   background-color: #eee;
 }
 
+/* Generales */
+
 section {
   padding: 2rem 9%;
 }
@@ -485,7 +487,7 @@ section {
   text-align: center;
   margin-top: 2rem;
   padding: 1rem;
-  padding-top: 2.5rem;
+  padding-top: 1rem;
   font-size: 2rem;
   border-top: 0.5rem solid rgba(165, 165, 165, 0.301);
 }
