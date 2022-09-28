@@ -77,7 +77,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 2rem 9%;
+  padding: 2vh 4vw;
   background: #fff;
   box-shadow: var(--box-shadow);
   z-index: 100;
