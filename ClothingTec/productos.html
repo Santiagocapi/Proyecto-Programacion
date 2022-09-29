@@ -14,11 +14,9 @@
     <title>Productos</title>
   </head>
   <body>
-
     <!-- Header -->
 
     <header class="header">
-
       <!-- Logo -->
 
       <a href="index.html" class="titulo"
@@ -79,48 +77,48 @@
 
     <!-- Main -->
 
-    <main>
-
-      <div class="contenedor">
-        <div class="titulo">
-          <h1>Nuestros Productos</h3>
-        </div>
-        <form action="">
-          <input type="text" class="barra_busqueda" id="buscar" placeholder="Buscar">
-        </form>
-        <div class="categorias" id="categorias">
-          <a href="#" class="activo">Todos</a> 
-          <a href="#">Gorros</a>
-          <a href="#">Buzos</a>
-          <a href="#">Remeras</a>
-          <a href="#">Pantalones</a>
-          <a href="#">Zapatilas</a>
-        </div>
+    <div class="contenedor">
+      <div class="titulo">
+        <h1>Nuestro Productos</h1>
+      </div>
+      <form action="">
+        <input
+          type="text"
+          class="barra_busqueda"
+          id="barra_busqueda"
+          placeholder="Buscar"
+        />
+      </form>
+      <div class="categorias" id="categorias">
+        <a href="#" class="activo">Todos</a>
+        <a href="#">Remerones</a>
+        <a href="#">Buzos</a>
+        <a href="#">Pantalones</a>
+        <a href="#">Bermudas</a>
       </div>
 
-      <!-- Productos -->
-
-        <div class="productos">
-          <img src="./imagenes/Remera1.jpg" alt="">
-          <img src="./imagenes/Remera2.jpg" alt="">
-          <img src="./imagenes/Remera3.jpg" alt="">
-          <img src="./imagenes/Remera4.jpg" alt="">
-          <img src="./imagenes/Remera5.jpg" alt="">
+      <section class="grid" id="grid">
+        <div class="item" data-categoria="remerones">
+          <div class="item-contenido">
+            <img src="./imagenes/Remera1.jpg" alt="" />
+          </div>
         </div>
-
-    </main>
-
+      </section>
+    </div>
 
     <!-- Footer -->
     <footer class="footer">
-
       <div class="creditos">
-        <a href="https://autogestion.produccion.gob.ar/consumidores">Copyright <span>ClothingTec</span> - 2022. Todos los derechos reservados.</a>
+        <a href="https://autogestion.produccion.gob.ar/consumidores"
+          >Copyright <span>ClothingTec</span> - 2022. Todos los derechos
+          reservados.</a
+        >
       </div>
-
     </footer>
 
     <!-- Link JavaScript -->
+    <script src="https://unpkg.com/web-animations-js@2.3.2/web-animations.min.js"></script>
+    <script src="https://unpkg.com/muuri@0.8.0/dist/muuri.min.js"></script>
     <script src="./js/script.js"></script>
   </body>
 </html>
