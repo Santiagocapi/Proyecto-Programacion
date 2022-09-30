@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  transition: all 0.2s linear;
+  text-transform: capitalize;
+}
+
+:root {
+  --naranja: #ff7800;
+  --negro: #000000;
+  --blanco: #ffffff;
+  --violeta: #92009f;
+  --gris: #888888;
+  --claro: #d1d1d133;
+  --box-shadow: 0 2rem 1.5rem rgba(0, 0, 0, 0.1);
+  --borde: 0.2rem solid rgba(0, 0, 0, 0.1);
+  --contorno: 0.1rem solid rgba(0, 0, 0, 0.1);
+  --contorno-hover: 0.1rem solid var(--negro);
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 7rem;
+}
+
+/* Header */
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  padding: 2vh 4vw;
+  background: #fff;
+  box-shadow: var(--box-shadow);
+  z-index: 100;
+}
+
+/* Barra de Navegacion */
+
+.header .navbar a {
+  font-size: 1.8rem;
+  margin: 0 1rem;
+  color: var(--negro);
+}
+
+.header .navbar a:hover {
+  color: var(--celeste);
+}
+
+/* Contenedor Main */
+
