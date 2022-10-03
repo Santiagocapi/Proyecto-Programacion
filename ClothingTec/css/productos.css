@@ -25,10 +25,6 @@
   text-transform: capitalize;
 }
 
-body {
-  background: #eee;
-}
-
 html {
   font-size: 62.5%;
   overflow-x: hidden;
@@ -36,33 +32,20 @@ html {
   scroll-padding-top: 7rem;
 }
 
-/* Generales*/
+body {
+  background: #f3f3f3;
+  font-family: "Open Sans", sans-serif;
+}
 
 a {
   text-decoration: none;
 }
 
-.btn {
-  margin-top: 1rem;
-  display: inline-block;
-  padding: 0.8rem 3rem;
-  font-size: 1.7rem;
-  border: 0.2rem solid var(--negro);
-  border-radius: 0.5rem;
-  color: var(--negro);
-  cursor: pointer;
-  background: none;
-}
-
-.btn:hover {
-  background: var(--celeste);
-  color: var(--blanco);
-}
-
 .contenedor {
   width: 90%;
-  max-width: 50rem;
+  max-width: 800px;
   margin: auto;
+  margin-top: 100px;
 }
 
 /* Header */
@@ -105,10 +88,10 @@ a {
 }
 
 .header .navbar a:hover {
-  color: var(--celeste);
+  color: var(--rosado);
 }
 
-/* Iconos Barra de Navegacion */
+/* Iconos de la barra de navegacion */
 
 .header .iconos {
   display: flex;
@@ -253,115 +236,87 @@ a {
   text-decoration: underline;
 }
 
-.contendor {
-  width: 90%;
-  max-width: 50rem;
-  margin: auto;
+/* Contenedor */
+
+.contenedor_categorias {
+  padding: 40px 0;
 }
-
-/* Main */
-
-.contenedor {
-  display: grid;
-  justify-content: center;
-  padding-top: 15rem;
-}
-
-.titulo {
+.contenedor_categorias .titulo {
   text-align: center;
-  margin-bottom: 2.5rem
+  margin-bottom: 40px;
+  font-size: 1.4rem;
 }
 
-.titulo h1{
-  font-size: 3rem;
+.contenedor_categorias form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
 }
 
-/* Main Barra de Busqueda */
-
-.barra_busqueda {
-  width: 100%; 
-  height: 3rem;
-  line-height: 2.5rem;
+.contenedor_categorias .barra-busqueda {
+  width: 70%;
+  height: 40px;
+  line-height: 40px;
   background: #fff;
-  padding: 0 1.2rem;
-  border-radius: 6.2rem;
+  padding: 0 20px;
+  border-radius: 100px;
   border: none;
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 16px;
 }
 
-/* Main Categorias */
-
-.categorias{
+.contenedor_categorias .categorias {
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
-.categorias a{
-  color: var(--rosado);
-  flex-wrap: wrap;
-  padding: 2rem 1rem;
+.contenedor_categorias .categorias a {
+  color: #9b9b9b;
+  margin: 10px 20px;
   font-size: 1.5rem;
   font-weight: 700;
 }
 
-.categorias a.activo{
+.contenedor_categorias .categorias a:hover{
   color: var(--celeste);
   font-size: 1.6rem;
 }
 
-.categorias a:hover{
-  color: var(--negro);
-  font-size: 1.4rem;
+.contenedor_categorias .categorias a.activo {
+  color: #000;
 }
 
-/* Main Productos */
+/* Grid */
 
 .grid {
-	position: relative;
-	width: 100%;
-	opacity: 0;
-	transition: opacity 0.5s linear 1s;
+  position: relative;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 0.5s linear 1s;
+}
+
+.grid.imagenes-cargadas {
+  opacity: 1;
 }
 
 .grid .item {
-	position: absolute;
-	display: block;
-	padding: 0;
-	margin: 10px;
-	width: calc(33.333333% - 20px);
+  position: absolute;
+  display: block;
+  padding: 0;
+  margin: 10px;
+  width: calc(33.333333% - 20px);
 }
 
 .grid .item-contenido {
-	position: relative;
+  position: relative;
 }
 
 .grid .item img {
-	width: 100%;
-	cursor: pointer;
-	vertical-align: top;
-}
-
-/* Footer */
-
-.footer {
-  background: var(--blanco);
-}
-
-.footer .creditos {
-  text-align: center;
-  margin-top: 2rem;
-  padding: 1rem;
-  padding-top: 1rem;
-  font-size: 2rem;
-  border-top: 0.5rem solid rgba(165, 165, 165, 0.301);
-}
-
-.footer .creditos span {
-  color: var(--rosado);
-}
-
-.footer .creditos a {
-  color: var(--negro);
+  width: 100%;
+  cursor: pointer;
+  vertical-align: top;
 }
 
 /* Media Queries */
@@ -379,6 +334,10 @@ a {
 }
 
 @media (max-width: 768px) {
+  #btn_menu {
+    display: inline-block;
+  }
+
   .header .navbar {
     position: absolute;
     top: 110%;
@@ -399,20 +358,17 @@ a {
     display: block;
   }
 
-  #btn_menu {
-    display: inline-block;
+  .grid .item {
+    width: calc(50% - 20px);
+  }
+
+  .contenedor_categorias .barra-busqueda {
+    width: 100%;
   }
 }
 
 @media (max-width: 450px) {
   html {
     font-size: 50%;
-  }
-
-  .heading {
-    font-size: 2.5rem;
-  }
-  .footer {
-    text-align: center;
   }
 }
