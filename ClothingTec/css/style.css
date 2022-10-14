@@ -377,7 +377,7 @@ section {
   text-align: center;
 }
 
-.categorias .contenedor_productos .box:hover{
+.productos .contenedor_productos .box:hover{
   outline:var(--contorno-hover);
   outline-offset: 0rem;
 }
