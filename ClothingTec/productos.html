@@ -78,90 +78,25 @@
       </form>
     </header>
 
-    <!-- Categorias -->
+    <!-- Barra de Busqueda -->
 
-    <div class="contenedor">
-      <section class="contenedor_categorias">
-        <div class="titulo">
-          <h1>Nuestros Productos</h1>
-        </div>
-        <form action="">
-          <input
-            type="text"
-            class="barra-busqueda"
-            id="barra-busqueda"
-            placeholder="Buscar"
-          />
-        </form>
-        <div class="categorias" id="categorias">
-          <a href="#" class="activo">Todos</a>
-          <a href="#">Buzos</a>
-          <a href="#">Remerones</a>
-          <a href="#">Pantalones</a>
-          <a href="#">Bermudas</a>
-        </div>
-      </section>
-
-      <!-- Productos -->
-
-      <section class="grid" id="grid">
-        <div
-          class="item"
-          data-categoria="remerones"
-          data-descripcion="1.- Lorem ipsum dolor sit amet consectetur."
-        >
-          <div class="item-contenido">
-            <img src="./imagenes/Remera1.jpg" alt="" />
-          </div>
-        </div>
-
-        <div
-          class="item"
-          data-categoria="remerones"
-          data-descripcion="2.- Lorem ipsum dolor sit amet consectetur."
-        >
-          <div class="item-contenido">
-            <img src="./imagenes/Remera2.jpg" alt="" />
-          </div>
-        </div>
-
-        <div
-          class="item"
-          data-categoria="remerones"
-          data-descripcion="3.- Lorem ipsum dolor sit amet consectetur."
-        >
-          <div class="item-contenido">
-            <img src="./imagenes/Remera3.jpg" alt="" />
-          </div>
-        </div>
-
-        <div
-          class="item"
-          data-categoria="remerones"
-          data-descripcion="4.- Lorem ipsum dolor sit amet consectetur."
-        >
-          <div class="item-contenido">
-            <img src="./imagenes/Remera4.jpg" alt="" />
-          </div>
-        </div>
-
-        <div
-          class="item"
-          data-categoria="remerones"
-          data-descripcion="5.- Lorem ipsum dolor sit amet consectetur."
-        >
-          <div class="item-contenido">
-            <img src="./imagenes/Remera5.jpg" alt="" />
-          </div>
-        </div>
-
-      </section>
-
+    <h2 class="titulo_productos">Nuestro Productos</h2>
+    <div class="wrapper">
+      <div class="contenedor_search" id="search_contenedor">
+        <input type="search" id="search_input" placeholder="Buscar product">
+        <button id="search">Buscar</button>
+      </div>
+      <div id="categorias">
+        <button class="boton_categorias active">Todos</button>
+        <button class="boton_categorias">Buzos</button>
+        <button class="boton_categorias">Remerones</button>
+        <button class="boton_categorias">Pantalones</button>
+        <button class="boton_categorias">Bermudas</button>
+      </div>
+      <div id="productos"></div>
     </div>
-
-    <script src="https://unpkg.com/web-animations-js@2.3.2/web-animations.min.js"></script>
-    <script src="https://unpkg.com/muuri@0.8.0/dist/muuri.min.js"></script>
-    <script src="./js/script.js"></script>
-    <script src="./js/productos.js"></script>
+    
+  <script src="./js/script.js"></script>
+  <script src="./js/productos.js"></script>
   </body>
 </html>
