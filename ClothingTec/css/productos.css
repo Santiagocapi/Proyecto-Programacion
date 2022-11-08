@@ -238,36 +238,36 @@ a {
 
 /* Barra de Busqueda*/
 
-.titulo_productos{
+.titulo_productos {
   margin-top: 12rem;
   text-align: center;
   font-size: 2.5rem;
 }
-.wrapper{
+.wrapper {
   width: 95%;
   margin: 0 auto;
 }
 
-.contenedor_search{
+.contenedor_search {
   align-items: center;
 }
 
-#search_contenedor{
+#search_contenedor {
   margin: 1rem 0;
 }
 
-#search_contenedor input{
+#search_contenedor input {
   background-color: transparent;
   width: 25%;
   border-bottom: 2px var(--celeste) solid;
   padding: 1rem 0;
 }
 
-#search_contenedor input:focus{
+#search_contenedor input:focus {
   border-bottom-color: var(--rosado);
 }
 
-#search_contenedor button{
+#search_contenedor button {
   padding: 1rem 1.5rem;
   margin: 1rem;
   background-color: var(--celeste);
@@ -277,13 +277,13 @@ a {
   cursor: pointer;
 }
 
-#search_contenedor button:hover{
+#search_contenedor button:hover {
   background-color: var(--rosado);
 }
 
 /* Categorias   */
 
-.boton_categorias{
+.boton_categorias {
   border: 2px solid var(--rosado);
   padding: 1rem 2.2rem;
   border-radius: 3rem;
@@ -292,26 +292,26 @@ a {
   cursor: pointer;
 }
 
-.boton_categorias:hover{
+.boton_categorias:hover {
   border-color: var(--celeste);
   color: var(--celeste);
 }
 
-.active{
+.active {
   border-color: var(--celeste);
   color: var(--celeste);
 }
 
 /* Productos*/
 
-#productos{
+#productos {
   display: grid;
-  grid-template-columns: auto auto auto auto auto;
+  grid-template-columns: auto auto auto auto;
   grid-column-gap: 1.5rem;
   padding: 3rem 0;
 }
 
-.card{
+.card {
   background-color: var(--claro);
   max-width: 25rem;
   margin-top: 1rem;
@@ -322,23 +322,33 @@ a {
   outline-offset: -0.5rem;
 }
 
-.card:hover{
+.card:hover {
   outline: var(--contorno-hover);
   outline-offset: 0rem;
 }
 
-.img_contenedor{
+.img_contenedor {
   text-align: center;
 }
 
-img{
+img {
   max-width: 100%;
   object-fit: contain;
 }
 
-.contenedor_productos{
+.contenedor_productos {
   padding-top: 1rem;
   color: var(--negro);
+}
+
+.contenedor_productos h3 {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.contenedor_productos h4 {
+  font-size: 1.1rem;
+  font-weight: 900;
 }
 
 /* Media Queries */
@@ -377,7 +387,7 @@ img{
     display: block;
   }
 
-  img{
+  img {
     max-width: 100%;
     object-fit: contain;
   }
@@ -386,5 +396,8 @@ img{
 @media (max-width: 450px) {
   html {
     font-size: 50%;
+  }
+  #productos {
+    grid-template-columns: auto auto auto;
   }
 }

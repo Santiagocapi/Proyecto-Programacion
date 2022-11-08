@@ -377,8 +377,8 @@ section {
   text-align: center;
 }
 
-.productos .contenedor_productos .box:hover{
-  outline:var(--contorno-hover);
+.productos .contenedor_productos .box:hover {
+  outline: var(--contorno-hover);
   outline-offset: 0rem;
 }
 
@@ -388,7 +388,7 @@ section {
   line-height: 1.8;
 }
 
-.productos .contenedor_productos .box p{
+.productos .contenedor_productos .box p {
   font-size: 1.2rem;
 }
 
