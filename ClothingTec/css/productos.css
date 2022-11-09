@@ -323,7 +323,6 @@ a {
   box-shadow: var(--box-shadow);
   outline: var(--contorno);
   outline-offset: -0.5rem;
-  height: auto;
 }
 
 .card:hover {
@@ -343,6 +342,7 @@ img {
 .contenedor_productos {
   padding-top: 1rem;
   color: var(--negro);
+  text-align: center;
 }
 
 .contenedor_productos h3 {
@@ -365,7 +365,6 @@ img {
   font-weight: 900;
   background: none;
   border-radius: 0.5rem;
-  border: 0.2rem solid var(--negro);
   padding: 0.1rem 1rem;
 }
 
