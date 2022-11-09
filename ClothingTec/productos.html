@@ -88,16 +88,16 @@
         <button id="search">Buscar</button>
       </div>
       <div id="categorias">
-        <button class="boton_categorias active">Todos</button>
-        <button class="boton_categorias">Buzos</button>
-        <button class="boton_categorias">Remerones</button>
-        <button class="boton_categorias">Pantalones</button>
-        <button class="boton_categorias">Bermudas</button>
+        <button class="boton_categorias" onclick="filterProduct('todos')">todos</button>
+        <button class="boton_categorias" onclick="filterProduct('buzos')">buzos</button>
+        <button class="boton_categorias" onclick="filterProduct('remerones')">remerones</button>
+        <button class="boton_categorias" onclick="filterProduct('pantalones')">pantalones</button>
+        <button class="boton_categorias" onclick="filterProduct('bermudas')">bermudas</button>
       </div>
       <div id="productos"></div>
     </div>
 
     <script src="./js/script.js"></script>
-    <script src="./js/productos.js"></script>
+    <script src="./js/categoriasProductos.js"></script>
   </body>
 </html>

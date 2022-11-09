@@ -2,123 +2,143 @@ let productos = {
   data: [
     {
       productName: "Remeron Kongo Bear",
-      categoria: "Remerones",
+      categoria: "remerones",
       price: "$4200",
       image: "./imagenes/Remera1.jpg",
+      carrito: "Añadir al Carrito"
     },
     {
       productName: "Remeron Wanted",
-      categoria: "Remerones",
+      categoria: "remerones",
       price: "$4200",
       image: "./imagenes/Remera2.jpg",
+      carrito: "Añadir al Carrito"
     },
     {
       productName: "Remeron Urban Culture",
-      categoria: "Remerones",
+      categoria: "remerones",
       price: "$4200",
       image: "./imagenes/Remera3.jpg",
+      carrito: "Añadir al Carrito"
     },
     {
       productName: "Remeron KB Black",
-      categoria: "Remerones",
+      categoria: "remerones",
       price: "$5400",
       image: "./imagenes/Remera4.jpg",
+      carrito: "Añadir al Carrito"
     },
     {
       productName: "Remeron Mr.White",
-      categoria: "Remerones",
+      categoria: "remerones",
       price: "$4200",
       image: "./imagenes/Remera5.jpg",
+      carrito: "Añadir al Carrito"
     },
     {
       productName: "Buzo Black Bandana",
-      categoria: "Buzos",
+      categoria: "buzos",
       price: "$7400",
       image: "./imagenes/Buzo1.jpg",
+      carrito: "Añadir al Carrito"
     },
     {
       productName: "Buzo Bandana Colors",
-      categoria: "Buzos",
+      categoria: "buzos",
       price: "$7400",
       image: "./imagenes/Buzo2.jpg",
+      carrito: "Añadir al Carrito"
     },
     {
       productName: "Buzo Final Chapter",
-      categoria: "Buzos",
+      categoria: "buzos",
       price: "$7000",
       image: "./imagenes/Buzo3.jpg",
+      carrito: "Añadir al Carrito"
     },
     {
       productName: "Buzo Blue Neon",
-      categoria: "Buzos",
+      categoria: "buzos",
       price: "$7000",
       image: "./imagenes/Buzo4.jpg",
+      carrito: "Añadir al Carrito"
     },
     {
       productName: "Buzo Essential",
-      categoria: "Buzos",
+      categoria: "buzos",
       price: "$7200",
       image: "./imagenes/Buzo5.jpg",
+      carrito: "Añadir al Carrito"
     },
     {
       productName: "Bermuda Black & White",
-      categoria: "Bermudas",
+      categoria: "bermudas",
       price: "$5000",
       image: "./imagenes/Bermuda1.jpg",
+      carrito: "Añadir al Carrito"
     },
     {
       productName: "Bermuda Bandana Colors",
-      categoria: "Bermudas",
+      categoria: "bermudas",
       price: "$5200",
       image: "./imagenes/Bermuda2.jpg",
+      carrito: "Añadir al Carrito"
     },
     {
       productName: "Bermuda Black Bandana",
-      categoria: "Bermudas",
+      categoria: "bermudas",
       price: "$5000",
       image: "./imagenes/Bermuda3.jpg",
+      carrito: "Añadir al Carrito"
     },
     {
       productName: "Bermuda Sky Colors",
-      categoria: "Bermudas",
+      categoria: "bermudas",
       price: "$5000",
       image: "./imagenes/Bermuda4.jpg",
+      carrito: "Añadir al Carrito"
     },
     {
       productName: "Bermuda Universal",
-      categoria: "Bermudas",
+      categoria: "bermudas",
       price: "$5000",
       image: "./imagenes/Bermuda5.jpg",
+      carrito: "Añadir al Carrito"
     },
     {
       productName: "Pantalon Ibiza",
-      categoria: "Pantalones",
+      categoria: "pantalones",
       price: "$7400",
       image: "./imagenes/Pantalon1.jpg",
+      carrito: "Añadir al Carrito"
     },
     {
       productName: "Pantalon Race",
-      categoria: "Pantalones",
+      categoria: "pantalones",
       price: "$7200",
       image: "./imagenes/Pantalon2.jpg",
+      carrito: "Añadir al Carrito"
     },
     {
       productName: "Pantalon Blue Jean",
-      categoria: "Pantalones",
+      categoria: "pantalones",
       price: "$7200",
       image: "./imagenes/Pantalon3.jpg",
+      carrito: "Añadir al Carrito"
     },
     {
       productName: "Pantalon Blue Neon",
-      categoria: "Pantalones",
+      categoria: "pantalones",
       price: "$7400",
       image: "./imagenes/Pantalon4.jpg",
+      carrito: "Añadir al Carrito"
     },
     {
       productName: "Pantalon Essential",
-      categoria: "Pantalones",
+      categoria: "pantalones",
       price: "$7400",
       image: "./imagenes/Pantalon5.jpg",
+      carrito: "Añadir al Carrito"
     },
   ],
 };
@@ -127,7 +147,7 @@ for (let i of productos.data) {
   //crear carta
   let card = document.createElement("div");
   //categoria para carta
-  card.classList.add("card", "i.categoria", "hide");
+  card.classList.add("card", i.categoria, "hide");
   //img div
   let imgContenedor = document.createElement("div");
   imgContenedor.classList.add("img_contenedor");
@@ -148,7 +168,64 @@ for (let i of productos.data) {
   let precio = document.createElement("h4");
   precio.innerText = i.price;
   contenedor.appendChild(precio);
+  let carrito = document.createElement("a");
+  carrito.classList.add("boton");
+  carrito.innerText = i.carrito;
+  contenedor.appendChild(carrito);
 
   card.appendChild(contenedor);
   document.getElementById("productos").appendChild(card);
 }
+
+// Parametros pasados al boton
+function filterProduct(value) {
+  let boton = document.querySelectorAll(".boton_categorias");
+  boton.forEach((button) => {
+    if (value.toUpperCase() == button.innerText.toUpperCase()) {
+      button.classList.add("active");
+    } else {
+      button.classList.remove("active");
+    }
+  });
+
+  // filtro 'todos' para los productos
+  let mostrar = document.querySelectorAll(".card");
+  mostrar.forEach((element) => {
+    if (value == "todos") {
+      element.classList.remove("hide");
+    }
+    else{
+      // filtro de categorias
+      if(element.classList.contains(value)){
+        element.classList.remove("hide");
+      }
+      else{
+        element.classList.add("hide");
+      }
+    }
+  });
+}
+
+// poder buscar los productos en la barra de busqueda
+document.getElementById("search").addEventListener("click", () => {
+  //inicializar
+  let buscar = document.getElementById("search_input").value;
+  let nombre = document.querySelectorAll(".nombre_producto");
+  let card = document.querySelectorAll(".card");
+  //recorrer todos los productos
+  
+  nombre.forEach((element,index) => {
+    if(element.innerText.includes(buscar.toUpperCase())){
+      //mostrar los productos buscados
+      card [index].classList.remove("hide");
+    } else{
+      //esconder los otros
+      card [index].classList.add("hide");
+    }
+  });
+})
+
+//Mostrar el filtro 'todos' al principio
+window.onload = () => {
+  filterProduct("todos");
+};

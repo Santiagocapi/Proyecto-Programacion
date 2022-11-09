@@ -64,7 +64,6 @@ section {
 
 .btn:hover {
   background: var(--celeste);
-  color: var(--blanco);
 }
 
 /* Header */

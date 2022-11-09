@@ -290,16 +290,19 @@ a {
   background-color: transparent;
   color: var(--rosado);
   cursor: pointer;
+  font-weight: 700;
 }
 
 .boton_categorias:hover {
+  background: var(--celeste);
+  color: var(--negro);
   border-color: var(--celeste);
-  color: var(--celeste);
 }
 
 .active {
   border-color: var(--celeste);
-  color: var(--celeste);
+  color: var(--negro);
+  background: var(--celeste);
 }
 
 /* Productos*/
@@ -312,7 +315,7 @@ a {
 }
 
 .card {
-  background-color: var(--claro);
+  background-color: #ffffff47;
   max-width: 25rem;
   margin-top: 1rem;
   padding: 1rem;
@@ -320,6 +323,7 @@ a {
   box-shadow: var(--box-shadow);
   outline: var(--contorno);
   outline-offset: -0.5rem;
+  height: auto;
 }
 
 .card:hover {
@@ -349,6 +353,24 @@ img {
 .contenedor_productos h4 {
   font-size: 1.1rem;
   font-weight: 900;
+}
+
+.hide{
+  display:none;
+}
+
+.boton{
+  cursor: pointer;
+  font-size: 1.3rem;
+  font-weight: 900;
+  background: none;
+  border-radius: 0.5rem;
+  border: 0.2rem solid var(--negro);
+  padding: 0.1rem 1rem;
+}
+
+.boton:hover{
+  background: var(--celeste);
 }
 
 /* Media Queries */
@@ -391,13 +413,23 @@ img {
     max-width: 100%;
     object-fit: contain;
   }
+
+  #search_contenedor input {
+    width: 60%;
+  }
 }
 
 @media (max-width: 450px) {
   html {
     font-size: 50%;
   }
+
   #productos {
     grid-template-columns: auto auto auto;
   }
+
+  .boton_categorias {
+    padding: 0.5rem 0.3rem;
+  }
+
 }
