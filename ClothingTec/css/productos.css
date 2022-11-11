@@ -41,6 +41,22 @@ a {
   text-decoration: none;
 }
 
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 0.8rem 3rem;
+    font-size: 1.7rem;
+    border: 0.2rem solid var(--negro);
+    border-radius: 0.5rem;
+    color: var(--negro);
+    cursor: pointer;
+    background: none;
+}
+
+.btn:hover {
+  background: var(--celeste);
+}
+
 .contenedor {
   width: 90%;
   max-width: 800px;
@@ -145,7 +161,7 @@ a {
   margin: 1rem 0;
 }
 
-.header .carrito_compras .box_carrito img {
+.header .carrito_compras .box_carrito .carrito_img {
   height: 10rem;
 }
 
@@ -163,13 +179,16 @@ a {
   color: var(--rosado);
 }
 
-.header .carrito_compras .box_carrito .contenedor h3 {
-  color: var(--negro);
-  font-size: 1.4rem;
-  padding-bottom: 1rem;
+.header .carrito_compras .box_carrito .contenedor{
+  margin-bottom: 6rem;
 }
 
-.header .carrito_compras .box_carrito .contenedor span {
+.header .carrito_compras .box_carrito .contenedor .carrito_nombre_producto {
+  color: var(--negro);
+  font-size: 1.4rem;
+}
+
+.header .carrito_compras .box_carrito .contenedor .precio {
   color: var(--gris);
   font-size: 1.5;
 }
@@ -178,7 +197,11 @@ a {
   padding-left: 1rem;
 }
 
-.header .carrito_compras .total_precio {
+.header .carrito_compras .total{
+  display: flex;
+}
+
+.header .carrito_compras .total .total_titulo, .total_precio {
   font-size: 1.8rem;
   padding: 1rem 0;
   text-align: center;
@@ -345,7 +368,7 @@ img {
   text-align: center;
 }
 
-.contenedor_productos h3 {
+.contenedor_productos .nombre_producto {
   font-size: 1.3rem;
   font-weight: 500;
 }
@@ -366,6 +389,7 @@ img {
   background: none;
   border-radius: 0.5rem;
   padding: 0.1rem 1rem;
+
 }
 
 .boton:hover{
