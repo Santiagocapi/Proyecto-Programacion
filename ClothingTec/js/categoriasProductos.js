@@ -1,6 +1,7 @@
 let productos = {
   data: [
     {
+      id: "1",
       productName: "Remeron Kongo Bear",
       categoria: "remerones",
       price: "$4200",
@@ -8,6 +9,7 @@ let productos = {
       carrito: "Añadir al Carrito"
     },
     {
+      id: "2",
       productName: "Remeron Wanted",
       categoria: "remerones",
       price: "$4200",
@@ -15,6 +17,7 @@ let productos = {
       carrito: "Añadir al Carrito"
     },
     {
+      id: "3",
       productName: "Remeron Urban Culture",
       categoria: "remerones",
       price: "$4200",
@@ -22,6 +25,7 @@ let productos = {
       carrito: "Añadir al Carrito"
     },
     {
+      id: "4",
       productName: "Remeron KB Black",
       categoria: "remerones",
       price: "$5400",
@@ -29,6 +33,7 @@ let productos = {
       carrito: "Añadir al Carrito"
     },
     {
+      id: "5",
       productName: "Remeron Mr.White",
       categoria: "remerones",
       price: "$4200",
@@ -36,6 +41,7 @@ let productos = {
       carrito: "Añadir al Carrito"
     },
     {
+      id: "6",
       productName: "Buzo Black Bandana",
       categoria: "buzos",
       price: "$7400",
@@ -43,6 +49,7 @@ let productos = {
       carrito: "Añadir al Carrito"
     },
     {
+      id: "7",
       productName: "Buzo Bandana Colors",
       categoria: "buzos",
       price: "$7400",
@@ -50,6 +57,7 @@ let productos = {
       carrito: "Añadir al Carrito"
     },
     {
+      id: "8",
       productName: "Buzo Final Chapter",
       categoria: "buzos",
       price: "$7000",
@@ -57,6 +65,7 @@ let productos = {
       carrito: "Añadir al Carrito"
     },
     {
+      id: "9",
       productName: "Buzo Blue Neon",
       categoria: "buzos",
       price: "$7000",
@@ -64,6 +73,7 @@ let productos = {
       carrito: "Añadir al Carrito"
     },
     {
+      id: "10",
       productName: "Buzo Essential",
       categoria: "buzos",
       price: "$7200",
@@ -71,6 +81,7 @@ let productos = {
       carrito: "Añadir al Carrito"
     },
     {
+      id: "11",
       productName: "Bermuda Black & White",
       categoria: "bermudas",
       price: "$5000",
@@ -78,6 +89,7 @@ let productos = {
       carrito: "Añadir al Carrito"
     },
     {
+      id: "12",
       productName: "Bermuda Bandana Colors",
       categoria: "bermudas",
       price: "$5200",
@@ -85,6 +97,7 @@ let productos = {
       carrito: "Añadir al Carrito"
     },
     {
+      id: "13",
       productName: "Bermuda Black Bandana",
       categoria: "bermudas",
       price: "$5000",
@@ -92,6 +105,7 @@ let productos = {
       carrito: "Añadir al Carrito"
     },
     {
+      id: "14",
       productName: "Bermuda Sky Colors",
       categoria: "bermudas",
       price: "$5000",
@@ -99,6 +113,7 @@ let productos = {
       carrito: "Añadir al Carrito"
     },
     {
+      id: "15",
       productName: "Bermuda Universal",
       categoria: "bermudas",
       price: "$5000",
@@ -106,6 +121,7 @@ let productos = {
       carrito: "Añadir al Carrito"
     },
     {
+      id: "16",
       productName: "Pantalon Ibiza",
       categoria: "pantalones",
       price: "$7400",
@@ -113,6 +129,7 @@ let productos = {
       carrito: "Añadir al Carrito"
     },
     {
+      id: "17",
       productName: "Pantalon Race",
       categoria: "pantalones",
       price: "$7200",
@@ -120,6 +137,7 @@ let productos = {
       carrito: "Añadir al Carrito"
     },
     {
+      id: "18",
       productName: "Pantalon Blue Jean",
       categoria: "pantalones",
       price: "$7200",
@@ -127,6 +145,7 @@ let productos = {
       carrito: "Añadir al Carrito"
     },
     {
+      id: "19",
       productName: "Pantalon Blue Neon",
       categoria: "pantalones",
       price: "$7400",
@@ -134,6 +153,7 @@ let productos = {
       carrito: "Añadir al Carrito"
     },
     {
+      id: "20",
       productName: "Pantalon Essential",
       categoria: "pantalones",
       price: "$7400",
@@ -169,6 +189,7 @@ for (let i of productos.data) {
   precio.innerText = i.price;
   contenedor.appendChild(precio);
   let carrito = document.createElement("a");
+  carrito.setAttribute("id", "agregar");
   carrito.classList.add("boton");
   carrito.innerText = i.carrito;
   contenedor.appendChild(carrito);
