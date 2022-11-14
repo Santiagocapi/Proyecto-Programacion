@@ -260,10 +260,22 @@ a {
 /* Barra de Busqueda*/
 
 .titulo_productos {
-  margin-top: 12rem;
+  margin-top: 10rem;
   text-align: center;
-  font-size: 2.5rem;
+  padding: 2rem 0;
+  padding-bottom: 3rem;
+  font-size: 3.5rem;
+  color: var(--negro);
 }
+
+.titulo_productos span{
+  background: var(--celeste);
+  color: var(--blanco);
+  display: inline-block;
+  padding: 0.5rem 3rem;
+  clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
+}
+
 .wrapper {
   width: 95%;
   margin: 0 auto;

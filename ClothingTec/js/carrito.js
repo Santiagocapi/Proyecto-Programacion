@@ -7,7 +7,6 @@ if (document.readyState == "loading"){
 function ready(){
     // borrar productos de el carrito
     var borrarItem = document.getElementsByClassName("basurin");
-    console.log(borrarItem);
     for (var i = 0; i < borrarItem.length; i++){
         var boton = borrarItem[i];
         boton.addEventListener("click",  borrarCarro);
@@ -59,7 +58,7 @@ function actTotal () {
         var contenedorCarro = contenedorCarrito[i];
         var precioElemento =  coontenedorCarro.getElementsByClassName("precio")[0];
         var cantidadElemento = contenedorCarro.getElementsByClassName("cantidad")[0];
-        var precio = parseInt(precioElemento.innerText.replace("$",""))
+        var precio = parseInt(precioElemento.innerText.replace("$",""));
         var cantidad = cantidadElemento.value;
 
         document.getElementsByClassName("total_precio")[0].innerText= "$" + total;

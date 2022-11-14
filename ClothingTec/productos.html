@@ -52,7 +52,7 @@
 
       <div class="carrito_compras">
         <div class="box_carrito">
-            <i class="basurin fa-solid fa-trash" id="basurin"></i>
+            <i class="basurin fa-solid fa-trash"></i>
             <img src="./imagenes/Bermuda1.jpg" alt="" class="carrito_img" />
             <div class="contenedor_descr">
               <h3 class="carrito_nombre_producto">Zapatilla Nazi</h3>
@@ -79,15 +79,20 @@
       </form>
     </header>
 
+
+    <h2 class="titulo_productos">Nuestros <span>Productos</span></h2>
+
     <!-- Barra de Busqueda -->
 
-    <h2 class="titulo_productos">Nuestro Productos</h2>
     <div class="wrapper">
       <div class="contenedor_search" id="search_contenedor">
         <input type="search" id="search_input" placeholder="Buscar product" />
         <button id="search">Buscar</button>
       </div>
-      <div id="categorias">
+
+      <!-- Categorias -->
+      
+     <div id="categorias">
         <button class="boton_categorias" onclick="filterProduct('todos')">
           todos
         </button>
