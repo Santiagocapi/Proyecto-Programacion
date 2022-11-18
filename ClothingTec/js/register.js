@@ -1,10 +1,12 @@
 const formulario = document.getElementById("formulario");
 const inputs = document.querySelectorAll("#formulario input");
+const inputsClass = document.getElementsByClassName("formulario__input");
+const botonForm = document.getElementsByClassName("formulario__btn");
+import axios from "axios";
 
 const expresiones = {
   password: /^.{4,12}$/, // 4 a 12 digitos.
   correo: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
-  telefono: /^\d{10,10}$/, // 7 a 14 numeros.
 };
 
 const campos = {
@@ -13,20 +15,24 @@ const campos = {
   telefono: false
 }
 
+let newUser = {
+  email: '',
+  name: '',
+  password: ''
+}
+
+
 const validarFormulario = (e) => {
   switch (e.target.name) {
     case "correo":
-        validarCampo(expresiones.correo, e.target, 'correo');
+      validarCampo(expresiones.correo, e.target, 'correo');
       break;
     case "password":
-        validarCampo(expresiones.password, e.target, 'password');
-        validarPassword2();
+      validarCampo(expresiones.password, e.target, 'password');
+      validarPassword2();
       break;
     case "password2":
-        validarPassword2();
-      break;
-    case "telefono":
-        validarCampo(expresiones.telefono, e.target, 'telefono');
+      validarPassword2();
       break;
   }
 };
@@ -53,7 +59,7 @@ const validarPassword2 = () => {
   const inputPassword1 = document.getElementById(`password`);
   const inputPassword2 = document.getElementById(`password2`);
 
-  if (inputPassword1.value !== inputPassword2.value){
+  if (inputPassword1.value !== inputPassword2.value) {
     document.getElementById(`grupo__password2`).classList.remove("formulario__grupo-correcto");
     document.getElementById(`grupo__password2`).classList.add("formulario__grupo-incorrecto");
     document.querySelector(`#grupo__password2 i`).classList.add("fa-times-circle");
@@ -75,26 +81,71 @@ inputs.forEach((input) => {
   input.addEventListener("blur", validarFormulario);
 });
 
+function handleSubmit(e) {
+  if (e.target[0].value === '') {
+    return
+  }
+
+  newUser.email = e.target[0].value
+  console.log('1: '+e.target[0].value);
+
+  if (e.target[1].value === '') {
+    return
+  }
+
+  console.log('2: '+e.target[1].value);
+
+  if (e.target[2].value === '' || e.target[2].value !== e.target[1].value) {
+    return
+  }
+
+  newUser.password = e.target[2].value
+  console.log('3: '+e.target[2].value);
+  
+  if (e.target[3].value === '' ) {
+    return
+  }
+
+  newUser.name = e.target[3].value
+  console.log('4: '+e.target[3].value);
+
+  if (!e.target[4].checked){
+    return
+  }
+
+  console.log('Acepto los terminos')
+  console.log(newUser)
+}
+
+
+
 formulario.addEventListener("submit", (e) => {
   e.preventDefault();
 
+  handleSubmit(e)
+
   const terminos = document.getElementById('terminos');
-  if (campos.telefono && campos.correo && campos.password && terminos.checked){
+  if (campos.correo && campos.password && terminos.checked) {
     formulario.reset();
 
     document.getElementById('formulario__mensaje-exito').classList.add('formulario__mensaje-exito-activo');
     setTimeout(() => {
       document.getElementById('formulario__mensaje-exito').classList.remove('formulario__mensaje-exito-activo');
-    }, 5000); 
+    }, 5000);
 
     document.querySelectorAll('.formulario__grupo-correcto').forEach((icono) => {
       icono.classList.remove('formulario__grupo-correcto');
     });
 
-  } else {  
+  } else {
     document.getElementById('formulario__mensaje').classList.add('formulario__mensaje-activo');
     setTimeout(() => {
       document.getElementById('formulario__mensaje').classList.remove('formulario__mensaje-activo');
     }, 4000)
   }
+
+  axios.post("http://localhost:5000/api/user", newUser)
+  .then((res)=> console.log(res))
+  .catch((err)=> console.log(err))
+
 });

@@ -1,5 +1,5 @@
 let productos = {
-  data: [
+  data:  [
     {
       id: "1",
       productName: "Remeron Kongo Bear",
